@@ -8,7 +8,7 @@ describe('mysolanaapp', () => {
   it('Is initialized!', async () => {
     // Add your test here.
     const program = anchor.workspace.Mysolanaapp;
-    const tx = await program.rpc.initialize();
+    const tx = await program.rpc.initialize(); //calling the function
     console.log("Your transaction signature", tx);
   });
 });
